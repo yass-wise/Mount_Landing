@@ -11,7 +11,7 @@
     </head>
     
     <body>
-        <main class="page">
+        <div class="page-wrapper">
 <!--HEADER SECTION-->
             <header class="header">
                 <div class="header__top-panel">
@@ -50,183 +50,187 @@
                 <button type="button" class="header__btn-main">Order now</button>
             </header>
             
-<!--ABOUT SECTION-->
-            <section class="about">
-                <h2 class="about__heading">About us</h2>
-                <p class="about__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum iure soluta, corporis explicabo, autem porro amet aliquid in quas at.</p>
-                <button type="button" class="btn about__btn">Read more</button>
-                <img class="about__img" src="img/blog/friends.jpg" alt="Friends"> 
-                <img class="about__img" src="img/blog/feet.jpg" alt="Landscape"> 
-            </section>
+<!--MAIN CONTENT-->
+            <main class="main-content">
             
-<!--JOURNAL SECTION-->
-            <section class="journal">
-               <h2 class="journal__heading">Our journal</h2>
-               <div class="post-container">
-                   <div class="post-wrapper">
-    <!--ARTICLE 1-->
-                       <article class="blog-post journal__post">
-                            <section class="blog-post__graph-section">
-                               <img src="img/journal/post1.jpg" alt="Post's image" class="blog-post__img">
-                               <img src="img/journal/heart_x2.png" alt="heart icon" class="blog-post__icon" width="81" height="81">
-                            </section>
-                            <section class="blog-post__text-section">
-                                <p class="blog-post__theme">Love</p>
-                                <h3 class="blog-post__heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, a!</h3>
-                                <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur eos impedit. Id saepe consequuntur, ad similique accusantium maxime facilis.</p>
-                                <p class="blog-post__num">01</p>
-                            </section>
-                        </article>
-    <!--ARTICLE 2-->
+    <!--ABOUT SECTION-->
+                <section class="about">
+                    <h2 class="about__heading">About us</h2>
+                    <p class="about__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum iure soluta, corporis explicabo, autem porro amet aliquid in quas at.</p>
+                    <button type="button" class="btn about__btn">Read more</button>
+                    <img class="about__img" src="img/blog/friends.jpg" alt="Friends"> 
+                    <img class="about__img" src="img/blog/feet.jpg" alt="Landscape"> 
+                </section>
+                
+    <!--JOURNAL SECTION-->
+                <section class="journal">
+                   <h2 class="journal__heading">Our journal</h2>
+                   <div class="post-container">
+                       <div class="post-wrapper">
+        <!--ARTICLE 1-->
+                           <article class="blog-post journal__post">
+                                <section class="blog-post__graph-section">
+                                   <img src="img/journal/post1.jpg" alt="Post's image" class="blog-post__img">
+                                   <img src="img/journal/heart_x2.png" alt="heart icon" class="blog-post__icon" width="81" height="81">
+                                </section>
+                                <section class="blog-post__text-section">
+                                    <p class="blog-post__theme">Love</p>
+                                    <h3 class="blog-post__heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, a!</h3>
+                                    <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur eos impedit. Id saepe consequuntur, ad similique accusantium maxime facilis.</p>
+                                    <p class="blog-post__num">01</p>
+                                </section>
+                            </article>
+        <!--ARTICLE 2-->
+                            <article class="blog-post journal__post">
+                                <section class="blog-post__graph-section">
+                                   <img src="img/journal/post2.jpg" alt="Post's image" class="blog-post__img">
+                                   <img src="img/journal/leaf_x2.png" alt="leaf icon" class="blog-post__icon" width="65" height="65">
+                                </section>
+                                <section class="blog-post__text-section">
+                                    <p class="blog-post__theme">Tree</p>
+                                    <h3 class="blog-post__heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, a!</h3>
+                                    <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur eos impedit. Id saepe consequuntur, ad similique accusantium maxime facilis.</p>
+                                    <p class="blog-post__num">02</p>
+                                </section>
+                            </article>
+                        </div>
+        <!--ARTICLE 3-->
                         <article class="blog-post journal__post">
                             <section class="blog-post__graph-section">
-                               <img src="img/journal/post2.jpg" alt="Post's image" class="blog-post__img">
-                               <img src="img/journal/leaf_x2.png" alt="leaf icon" class="blog-post__icon" width="65" height="65">
+                               <img src="img/journal/post3.jpg" alt="Post's image" class="blog-post__img">
+                               <img src="img/journal/drop_x2.png" alt="leaf icon" class="blog-post__icon" width="59" height="74">
                             </section>
                             <section class="blog-post__text-section">
-                                <p class="blog-post__theme">Tree</p>
+                                <p class="blog-post__theme">Water</p>
                                 <h3 class="blog-post__heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, a!</h3>
                                 <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur eos impedit. Id saepe consequuntur, ad similique accusantium maxime facilis.</p>
-                                <p class="blog-post__num">02</p>
+                                <p class="blog-post__num">03</p>
                             </section>
                         </article>
                     </div>
-    <!--ARTICLE 3-->
-                    <article class="blog-post journal__post">
-                        <section class="blog-post__graph-section">
-                           <img src="img/journal/post3.jpg" alt="Post's image" class="blog-post__img">
-                           <img src="img/journal/drop_x2.png" alt="leaf icon" class="blog-post__icon" width="59" height="74">
-                        </section>
-                        <section class="blog-post__text-section">
-                            <p class="blog-post__theme">Water</p>
-                            <h3 class="blog-post__heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, a!</h3>
-                            <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur eos impedit. Id saepe consequuntur, ad similique accusantium maxime facilis.</p>
-                            <p class="blog-post__num">03</p>
-                        </section>
-                    </article>
-                </div>
-            </section>
-            
-<!--OFFER SECTION-->
-            <section class="offer">
-                <div class="offer-wrapper">
-                    <h2 class="offer__heading">Do you wanna go?</h2>
-                    <p class="offer__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vitae saepe libero modi laboriosam explicabo, velit quas nobis perferendis totam</p>
-                    
-                    <form class="order-form offer__form" action="" method="post">
-                        <label for="name">Your name:</label>
-                        <input class="order-form__input-name" type="text" name="name" id="name" required>
-                        <label for="phone">Your phone:</label>
-                        <input class="order-form__input-phone" type="tel" name="phone" id="phone" required>
-                        <input class="order-form__input-btn" type="submit" value="Order now">
-                    </form>
-                    
-                    <p class="offer__form-submit-status">*Your data will not be transferred</p>
-                </div>
-            </section>
-            
-<!--WORK SECTION-->
-            <section class="work">
-                <h2 class="work__heading">How we work</h2>
-                <ul class="work__stage-list">
-<!--Stage item 1-->
-                    <li class="work__stage-item">
-<!--                       for work__stage-num class delete numbers and use CSS-counters-->
-                        <div class="work__stage-num">1</div>
-                        <div class="work__stage-icon"><img src="img/scheme/file_x4.png" alt="file icon" width="32" height="40"></div>
-                        <h3 class="work__stage-title">Lorem ipsum dolor sit.</h3>
-                        <p class="work__stage-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, error!</p>
-                    </li>
-<!--Stage item 2-->
-                    <li class="work__stage-item">
-                        <div class="work__stage-num">2</div>
-                        <div class="work__stage-icon"><img src="img/scheme/person_x4.png" alt="person icon" width="40" height="40"></div>
-                        <h3 class="work__stage-title">Lorem ipsum dolor sit.</h3>
-                        <p class="work__stage-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, error!</p>
-                    </li>
-<!--Stage item 3-->
-                    <li class="work__stage-item">
-                        <div class="work__stage-num">3</div>
-                        <div class="work__stage-icon"><img src="img/scheme/book_x4.png" alt="book icon" width="38" height="38"></div>
-                        <h3 class="work__stage-title">Lorem ipsum dolor sit.</h3>
-                        <p class="work__stage-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, error!</p>
-                    </li>
-<!--Stage item 4-->
-                    <li class="work__stage-item">
-                        <div class="work__stage-num">4</div>
-                        <div class="work__stage-icon"><img src="img/scheme/check_x4.png" alt="check icon" width="38" height="38"></div>
-                        <h3 class="work__stage-title">Lorem ipsum dolor sit.</h3>
-                        <p class="work__stage-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, error!</p>
-                    </li>
-                    
-                </ul>
-            </section>
-             
-<!--GALLERY SECTION-->
-            <section class="gallery">
-                <h2 class="gallery__heading">Gallery</h2>
-                <div class="gallery-wrapper">
-                    <div class="gallery__col-1">
-                        <img src="img/gallery/img_1.jpg" alt="Image 1">
-                        <img src="img/gallery/img_2.jpg" alt="Image 2">
+                </section>
+                
+    <!--OFFER SECTION-->
+                <section class="offer">
+                    <div class="offer-wrapper">
+                        <h2 class="offer__heading">Do you wanna go?</h2>
+                        <p class="offer__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vitae saepe libero modi laboriosam explicabo, velit quas nobis perferendis totam</p>
+                        
+                        <form class="order-form offer__form" action="" method="post">
+                            <label for="name">Your name:</label>
+                            <input class="order-form__input-name" type="text" name="name" id="name" required>
+                            <label for="phone">Your phone:</label>
+                            <input class="order-form__input-phone" type="tel" name="phone" id="phone" required>
+                            <input class="order-form__input-btn" type="submit" value="Order now">
+                        </form>
+                        
+                        <p class="offer__form-submit-status">*Your data will not be transferred</p>
                     </div>
-                    <div class="gallery__col-2">
-                        <img src="img/gallery/img_3.jpg" alt="Image 3">
-                        <img src="img/gallery/img_4.jpg" alt="Image 4">
-                    </div>
-                    <div class="gallery__col-3">
-                        <img src="img/gallery/img_5.jpg" alt="Image 5">
-                        <img src="img/gallery/img_6.jpg" alt="Image 6">
-                    </div>
-                </div>
-            </section>
-
-<!--LOGOS SECTION-->
-            <section class="logos">
-                <div class="logos-wrapper">
-                    <ul class="logos__list">
-                        <li class="logos__item"><img src="img/logos/slack.png" width="80" height="24" alt="slack logo" class="logos__img"></li>
-                        <li class="logos__item"><img src="img/logos/adobe.png" width="38" height="34" alt="abode logo" class="logos__img"></li>
-                        <li class="logos__item"><img src="img/logos/google.png" width="80" height="28" alt="google logo" class="logos__img"></li>
-                        <li class="logos__item"><img src="img/logos/facebook.png" width="80" height="18" alt="fb logo" class="logos__img"></li>
-                        <li class="logos__item"><img src="img/logos/spotify.png" width="80" height="24" alt="spotify logo" class="logos__img"></li>
-                        <li class="logos__item"><img src="img/logos/nike.png" width="70" height="26" alt="nike logo" class="logos__img"></li>
+                </section>
+                
+    <!--WORK SECTION-->
+                <section class="work">
+                    <h2 class="work__heading">How we work</h2>
+                    <ul class="work__stage-list">
+    <!--Stage item 1-->
+                        <li class="work__stage-item">
+    <!--                       for work__stage-num class delete numbers and use CSS-counters-->
+                            <div class="work__stage-num">1</div>
+                            <div class="work__stage-icon"><img src="img/scheme/file_x4.png" alt="file icon" width="32" height="40"></div>
+                            <h3 class="work__stage-title">Lorem ipsum dolor sit.</h3>
+                            <p class="work__stage-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, error!</p>
+                        </li>
+    <!--Stage item 2-->
+                        <li class="work__stage-item">
+                            <div class="work__stage-num">2</div>
+                            <div class="work__stage-icon"><img src="img/scheme/person_x4.png" alt="person icon" width="40" height="40"></div>
+                            <h3 class="work__stage-title">Lorem ipsum dolor sit.</h3>
+                            <p class="work__stage-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, error!</p>
+                        </li>
+    <!--Stage item 3-->
+                        <li class="work__stage-item">
+                            <div class="work__stage-num">3</div>
+                            <div class="work__stage-icon"><img src="img/scheme/book_x4.png" alt="book icon" width="38" height="38"></div>
+                            <h3 class="work__stage-title">Lorem ipsum dolor sit.</h3>
+                            <p class="work__stage-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, error!</p>
+                        </li>
+    <!--Stage item 4-->
+                        <li class="work__stage-item">
+                            <div class="work__stage-num">4</div>
+                            <div class="work__stage-icon"><img src="img/scheme/check_x4.png" alt="check icon" width="38" height="38"></div>
+                            <h3 class="work__stage-title">Lorem ipsum dolor sit.</h3>
+                            <p class="work__stage-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, error!</p>
+                        </li>
+                        
                     </ul>
-                </div>
-            </section>
-
-<!--CLIENTS SECTION-->
-            <section class="clients">
-                <h2 class="clients__heading">Our clients say</h2>
-                <div class="clients-wrapper">
-                    <article class="feedback-post clients__post">
-                        <p class="feedback-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos consequuntur quia quisquam quaerat minima id dicta aut mollitia at dolorem, magnam qui nesciunt, nihil quas eligendi laudantium, velit! Ipsum, sunt!</p>
-                        <img src="img/clients/ava_1.png" alt="user photo" class="feedback-post__usr-ava">
-                        <p class="feedback-post__usr-data"><span class="feedback-post__usr-name">Yaroslav Pavliv </span> <span class="feedback-post__usr-profession">Web desinger</span></p>
-                    </article>
-                    
-                    <article class="feedback-post clients__post">
-                        <p class="feedback-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos consequuntur quia quisquam quaerat minima id dicta aut mollitia at dolorem, magnam qui nesciunt, nihil quas eligendi laudantium, velit! Ipsum, sunt!</p>
-                        <img src="img/clients/ava_2.png" alt="user photo" class="feedback-post__usr-ava">
-                        <p class="feedback-post__usr-data"><span class="feedback-post__usr-name">John Scott </span> <span class="feedback-post__usr-profession">The Fringe</span></p>
-                    </article>
-                </div>
-            </section>
-            
-<!--CONTACTS SECTION-->
-            <section class="contacts">
-               
-                <div class="form-wrapper">
-                    <h2 class="contacts__heading">Contacts</h2>
-                    <p class="contacts__descr">Sign up for our newsletter to recieve updates</p>
-                    <form class="contact-form contacts__form" action="" method="post">
-                        <input class="contact-form__input-name" type="text" name="name" placeholder="Name" required>
-                        <input class="contact-form__input-phone" type="tel" name="phone" placeholder="Phone" required>
-                        <input class="contact-form__input-email" type="email" name="email" placeholder="E-mail" required>
-                        <input class="contact-form__input-btn" type="submit" value="Send">
-                    </form>
-                </div>            
-            </section>
+                </section>
+                 
+    <!--GALLERY SECTION-->
+                <section class="gallery">
+                    <h2 class="gallery__heading">Gallery</h2>
+                    <div class="gallery-wrapper">
+                        <div class="gallery__col-1">
+                            <img src="img/gallery/img_1.jpg" alt="Image 1">
+                            <img src="img/gallery/img_2.jpg" alt="Image 2">
+                        </div>
+                        <div class="gallery__col-2">
+                            <img src="img/gallery/img_3.jpg" alt="Image 3">
+                            <img src="img/gallery/img_4.jpg" alt="Image 4">
+                        </div>
+                        <div class="gallery__col-3">
+                            <img src="img/gallery/img_5.jpg" alt="Image 5">
+                            <img src="img/gallery/img_6.jpg" alt="Image 6">
+                        </div>
+                    </div>
+                </section>
+    
+    <!--LOGOS SECTION-->
+                <section class="logos">
+                    <div class="logos-wrapper">
+                        <ul class="logos__list">
+                            <li class="logos__item"><img src="img/logos/slack.png" width="80" height="24" alt="slack logo" class="logos__img"></li>
+                            <li class="logos__item"><img src="img/logos/adobe.png" width="38" height="34" alt="abode logo" class="logos__img"></li>
+                            <li class="logos__item"><img src="img/logos/google.png" width="80" height="28" alt="google logo" class="logos__img"></li>
+                            <li class="logos__item"><img src="img/logos/facebook.png" width="80" height="18" alt="fb logo" class="logos__img"></li>
+                            <li class="logos__item"><img src="img/logos/spotify.png" width="80" height="24" alt="spotify logo" class="logos__img"></li>
+                            <li class="logos__item"><img src="img/logos/nike.png" width="70" height="26" alt="nike logo" class="logos__img"></li>
+                        </ul>
+                    </div>
+                </section>
+    
+    <!--CLIENTS SECTION-->
+                <section class="clients">
+                    <h2 class="clients__heading">Our clients say</h2>
+                    <div class="clients-wrapper">
+                        <article class="feedback-post clients__post">
+                            <p class="feedback-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos consequuntur quia quisquam quaerat minima id dicta aut mollitia at dolorem, magnam qui nesciunt, nihil quas eligendi laudantium, velit! Ipsum, sunt!</p>
+                            <img src="img/clients/ava_1.png" alt="user photo" class="feedback-post__usr-ava">
+                            <p class="feedback-post__usr-data"><span class="feedback-post__usr-name">Yaroslav Pavliv </span> <span class="feedback-post__usr-profession">Web desinger</span></p>
+                        </article>
+                        
+                        <article class="feedback-post clients__post">
+                            <p class="feedback-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos consequuntur quia quisquam quaerat minima id dicta aut mollitia at dolorem, magnam qui nesciunt, nihil quas eligendi laudantium, velit! Ipsum, sunt!</p>
+                            <img src="img/clients/ava_2.png" alt="user photo" class="feedback-post__usr-ava">
+                            <p class="feedback-post__usr-data"><span class="feedback-post__usr-name">John Scott </span> <span class="feedback-post__usr-profession">The Fringe</span></p>
+                        </article>
+                    </div>
+                </section>
+                
+    <!--CONTACTS SECTION-->
+                <section class="contacts">
+                   
+                    <div class="form-wrapper">
+                        <h2 class="contacts__heading">Contacts</h2>
+                        <p class="contacts__descr">Sign up for our newsletter to recieve updates</p>
+                        <form class="contact-form contacts__form" action="" method="post">
+                            <input class="contact-form__input-name" type="text" name="name" placeholder="Name" required>
+                            <input class="contact-form__input-phone" type="tel" name="phone" placeholder="Phone" required>
+                            <input class="contact-form__input-email" type="email" name="email" placeholder="E-mail" required>
+                            <input class="contact-form__input-btn" type="submit" value="Send">
+                        </form>
+                    </div>            
+                </section>
+            </main>
             
 <!--FOOTER-->
             <footer class="footer">
@@ -250,11 +254,6 @@
                 </ul>
                 <p class="footer__copy">All rights reserved &copy;2018</p>
             </footer>
-
-
-
-            
-            
-        </main>
+        </div>
     </body>
 </html>

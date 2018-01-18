@@ -401,7 +401,7 @@ html {
   line-height: 1;
 }
 
-.page {
+.page-wrapper {
   max-width: 1920px;
 }
 
