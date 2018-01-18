@@ -1,0 +1,60 @@
+//Font variables
+
+$os-reg:    'open_sansregular';
+$os-bold:   'open_sansbold';
+
+$rw-bold:   'ralewaybold';
+
+$rob-light: 'robotolight';
+$rob-reg:   'robotoregular';
+$rob-black: 'robotoblack';
+
+$bringin:   'bringinregular';
+
+
+// Color variables
+
+$color-h1: #56c7ff;
+$color-h2: #2c2e37;
+
+// Font mixins
+
+@mixin font($f-fam, $f-size, $f-col) {
+    font-family: $f-fam;
+    font-size: $f-size#{rem};
+    color: $f-col;
+}
+
+// RWD mixins
+
+$mobile:   599px;
+$tablet:   600px;
+$laptop:   1200px;
+$desktop:  1600px;
+
+@mixin breakpoint($point) {
+    
+    @if $point == mobile {
+        @media screen and (max-width: $mobile)  { @content ; }
+    }
+    
+    @else if $point == tablet {
+        @media screen and (min-width: $tablet) { @content ; }
+    }
+    
+    @else if $point == laptop {
+        @media screen and (min-width: $laptop) { @content ; }
+    }
+    
+    @else if $point == desktop {
+        @media screen and (min-width: $desktop) { @content ; }
+    }
+}
+
+
+
+
+
+
+
+

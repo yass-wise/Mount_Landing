@@ -1,0 +1,94 @@
+//---------------------------------------------
+//              VARIABLES 
+//---------------------------------------------
+
+$br-sm: 600px;   // breakpoint for tablet
+$br-md: 900px;  // breakpoint for desktop
+
+$cells-qty: 12;      // number of columns
+$grid-width: 100%;   // grid width
+$gutter-width: 10px; // gutter width
+
+//---------------------------------------------
+//              FLEX-GRID for TABLETS 
+//---------------------------------------------
+
+@media screen and (min-width: $br-sm) {
+
+// grid container
+    .grid-box {
+    display: flex;
+    flex-flow: row nowrap;
+    }
+
+// sm cells common properties
+    %sm-common-props {
+        margin: 0 #{$gutter-width};
+        flex-grow: 0;
+        flex-shrink: 0;     
+    }
+    
+    @for $i from 1 through $cells-qty {
+        .cell-sm-#{$i} {
+            @extend %sm-common-props;
+        }
+    }
+    
+    @for $i from 1 through $cells-qty {
+        .cell-sm-#{$i} {
+            flex-basis: calc((#{$grid-width}/#{$cells-qty}*#{$i}) - #{$gutter-width}*2);
+            max-width: $grid-width/$cells-qty*$i;
+        }
+    }
+// cell settings end
+    
+    
+// column offsets
+    @for $i from 1 through ($cells-qty - 1) {
+        .cell-offset-sm-#{$i} {
+            margin-left: $grid-width/$cells-qty*$i;
+        }
+    }
+}
+
+//---------------------------------------------
+//              FLEX-GRID for DESKTOPS 
+//---------------------------------------------
+
+ @media screen and (min-width: $br-md) {
+    
+// grid container
+    .grid-box {
+    display: flex;
+    flex-flow: row nowrap;
+    }
+    
+// md cells common properties
+     %md-common-props {
+        margin: 0 #{$gutter-width};
+        flex-grow: 0;
+        flex-shrink: 0;     
+    }
+    
+    @for $i from 1 through $cells-qty {
+        .cell-md-#{$i} {
+            @extend %md-common-props;
+        }
+    }
+    
+    @for $i from 1 through $cells-qty {
+        .cell-md-#{$i} {
+            flex-basis: calc((#{$grid-width}/#{$cells-qty}*#{$i}) - #{$gutter-width}*2);
+            max-width: $grid-width/$cells-qty*$i;
+        }
+    }
+// cell settings end
+
+    
+// column offsets
+    @for $i from 1 through ($cells-qty - 1) {
+        .cell-offset-md-#{$i} {
+            margin-left: $grid-width/$cells-qty*$i;
+        }
+    }
+}
