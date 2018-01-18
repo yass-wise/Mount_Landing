@@ -8,11 +8,39 @@
         size: 1920px 698px;
     }
     
-    &__top {
+    &__top-panel {
         height: 88px;
         background-color: rgba(white, .23);
     }
+    
+    &__logo {
+        height: 44px;
+        
+    }
 }
 
+.header-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+
+    max-width: 1170px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+//************************************************ MENU BLOCK
+
+.menu {
+    &__list {
+        display: flex;
+        flex-flow: row nowrap;
+        
+//        width: 515px;
+    }
+    
+    &__item {
+        
+    }
+}
 
 

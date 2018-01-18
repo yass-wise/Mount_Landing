@@ -49,6 +49,10 @@ table {
 
 /* Custom reset */
 
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
 }
@@ -58,3 +62,4 @@ input[type="submit"] {
     background: #ccc;
     outline: none;
 }
+

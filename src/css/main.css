@@ -53,6 +53,10 @@ table {
 }
 
 /* Custom reset */
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -410,9 +414,26 @@ html {
   background-size: 1920px 698px;
 }
 
-.header__top {
+.header__top-panel {
   height: 88px;
   background-color: rgba(255, 255, 255, 0.23);
+}
+
+.header__logo {
+  height: 44px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 1170px;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.menu__list {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .about {
