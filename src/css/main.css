@@ -415,25 +415,57 @@ html {
 }
 
 .header__top-panel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
   height: 88px;
   background-color: rgba(255, 255, 255, 0.23);
 }
 
-.header__logo {
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex: 0 1 1170px;
   height: 44px;
+  margin: 0 auto;
 }
 
-.header-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-  max-width: 1170px;
+.header__logo {
   height: inherit;
-  margin: 0 auto;
+  margin-left: 15px;
+}
+
+.header__menu {
+  width: 515px;
+  height: inherit;
+  margin-left: 60px;
+}
+
+.header__btn-secondary {
+  height: inherit;
+  margin-left: auto;
 }
 
 .menu__list {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  height: 44px;
+}
+
+.menu__link {
+  padding: 10px;
 }
 
 .about {
