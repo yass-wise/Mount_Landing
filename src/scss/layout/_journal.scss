@@ -1,0 +1,144 @@
+.journal {
+    height: 1060px;
+    &__heading {
+        width: 100%;
+        text-align: center;
+        margin-top: 65px;
+        padding-top: 45px;
+        background-image: url(../../img/scheme/wave_x3.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 80px 7px;
+    }
+    
+    &__post-container {
+        display: flex;
+        flex-wrap: nowrap;
+        
+        margin: auto;
+        margin-top: 70px;
+        max-width: 1140px;
+        
+        box-shadow: 0 0 30px 0 rgba(black, .15);
+    }
+    
+}
+
+//********************************************************** BLOG-POST BLOCK
+
+%arrow-props {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.blog-post {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    
+    &__graph-section {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        
+        width: 380px;
+        height: 380px;
+        
+        position: relative;
+    }
+    
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        
+    }
+    &__icon {
+        
+        }
+    
+    &__text-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+        
+        min-width: 380px;
+        height: 380px;
+        
+        position: relative;
+        
+        &_arrow_left:before {
+            
+            @extend %arrow-props;
+            top: -40px;
+            left: -10px;
+            border-right: 10px solid #fff;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+        
+        &_arrow_right:before {
+            
+            @extend %arrow-props;
+            top: -40px;
+            right: -10px;
+            border-left: 10px solid #fff;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+        
+        &_arrow_top:before {
+            
+            @extend %arrow-props;
+            top: -10px;
+            left: 40px;
+            border-bottom: 10px solid #000;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+        }
+        
+    }
+    
+    &__theme {
+        margin-top: 45px;
+    }
+    
+    &__heading {
+        margin-top: 55px;
+        width: 330px;
+    }
+    
+    &__descr {
+        margin-top: 25px;
+        width: 270px;
+    }
+    
+    &__num {
+        margin-top: 40px;
+    }
+    
+    &_orient_vert {
+        flex-direction: column;
+    }
+    
+    &_reversed {
+        flex-direction: row-reverse;
+    }
+    
+}
+
+
+
+
+
+
+
+
+

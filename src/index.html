@@ -15,7 +15,7 @@
 <!--HEADER SECTION-->
             <header class="header">
                 <div class="header__top-panel">
-                    <div class="header__wrapper-top-panel">
+                    <div class="header__top-panel-wrapper grid-box cell-sm-12">
                         <div class="header__logo"><span>Moun</span>tains</div>
                         <nav class="menu header__menu">
                             <ul class="menu__list">
@@ -52,67 +52,72 @@
                     <button type="button" class="header__btn-main">Order now</button>
                 </div>
             </header>
- <!--            
-            MAIN CONTENT
-                        <main class="main-content">
+             
+<!--MAIN CONTENT-->
+            <main class="main-content">
                         
-                ABOUT SECTION
-                            <section class="about">
-                                <h2 class="about__heading">About us</h2>
-                                <p class="about__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum iure soluta, corporis explicabo, autem porro amet aliquid in quas at.</p>
-                                <button type="button" class="btn about__btn">Read more</button>
-                                <img class="about__img" src="img/blog/friends.jpg" alt="Friends"> 
-                                <img class="about__img" src="img/blog/feet.jpg" alt="Landscape"> 
-                            </section>
+<!--ABOUT SECTION-->
+                <section class="about">
+
+                    <div class="about__content-wrapper grid-box">
+                        <h2 class="about__heading cell-sm-4">About us</h2>
+                        <p class="about__descr cell-sm-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum iure soluta, corporis explicabo, autem porro amet aliquid in quas at.</p>
+                        <button type="button" class="about__btn cell-sm-4">Read more</button>
+                    </div>  
+
+                    <img class="about__img" src="img/blog/feet.jpg" width="350" height="350" alt="Landscape"> 
+                    <img class="about__img" src="img/blog/friends.jpg" width="806" height="570" alt="Friends"> 
+                </section>
                             
-                JOURNAL SECTION
-                            <section class="journal">
-                               <h2 class="journal__heading">Our journal</h2>
-                               <div class="post-container">
-                                   <div class="post-wrapper">
-                    ARTICLE 1
-                                       <article class="blog-post journal__post">
-                                            <section class="blog-post__graph-section">
-                                               <img src="img/journal/post1.jpg" alt="Post's image" class="blog-post__img">
-                                               <img src="img/journal/heart_x2.png" alt="heart icon" class="blog-post__icon" width="81" height="81">
-                                            </section>
-                                            <section class="blog-post__text-section">
-                                                <p class="blog-post__theme">Love</p>
-                                                <h3 class="blog-post__heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, a!</h3>
-                                                <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur eos impedit. Id saepe consequuntur, ad similique accusantium maxime facilis.</p>
-                                                <p class="blog-post__num">01</p>
-                                            </section>
-                                        </article>
-                    ARTICLE 2
-                                        <article class="blog-post journal__post">
-                                            <section class="blog-post__graph-section">
-                                               <img src="img/journal/post2.jpg" alt="Post's image" class="blog-post__img">
-                                               <img src="img/journal/leaf_x2.png" alt="leaf icon" class="blog-post__icon" width="65" height="65">
-                                            </section>
-                                            <section class="blog-post__text-section">
-                                                <p class="blog-post__theme">Tree</p>
-                                                <h3 class="blog-post__heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, a!</h3>
-                                                <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur eos impedit. Id saepe consequuntur, ad similique accusantium maxime facilis.</p>
-                                                <p class="blog-post__num">02</p>
-                                            </section>
-                                        </article>
-                                    </div>
-                    ARTICLE 3
-                                    <article class="blog-post journal__post">
-                                        <section class="blog-post__graph-section">
-                                           <img src="img/journal/post3.jpg" alt="Post's image" class="blog-post__img">
-                                           <img src="img/journal/drop_x2.png" alt="leaf icon" class="blog-post__icon" width="59" height="74">
-                                        </section>
-                                        <section class="blog-post__text-section">
-                                            <p class="blog-post__theme">Water</p>
-                                            <h3 class="blog-post__heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, a!</h3>
-                                            <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur eos impedit. Id saepe consequuntur, ad similique accusantium maxime facilis.</p>
-                                            <p class="blog-post__num">03</p>
-                                        </section>
-                                    </article>
-                                </div>
+<!--JOURNAL SECTION-->
+               
+                <section class="journal">
+                   <h2 class="journal__heading">Our journal</h2>
+                   <div class="journal__post-container">
+                       <div class="Journal__post-wrapper-2">
+<!--ARTICLE 1-->
+                           <article class="blog-post journal__post">
+                                <section class="blog-post__graph-section">
+                                   <img src="img/journal/post1.jpg" alt="Post's image" width="380" height="380" class="blog-post__img">
+                                   <img src="img/journal/heart_x2.png" alt="heart icon" class="blog-post__icon" width="81" height="81">
+                                </section>
+                                <section class="blog-post__text-section">
+                                    <p class="blog-post__theme">Love</p>
+                                    <h3 class="blog-post__heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, a!</h3>
+                                    <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur eos impedit. Id saepe consequuntur, ad similique accusantium maxime facilis.</p>
+                                    <p class="blog-post__num">01</p>
+                                </section>
+                            </article>
+<!--ARTICLE 2-->
+                            <article class="blog-post blog-post_reversed journal__post">
+                                <section class="blog-post__graph-section">
+                                   <img src="img/journal/post2.jpg" alt="Post's image" width="380" height="380" class="blog-post__img">
+                                   <img src="img/journal/leaf_x2.png" alt="leaf icon" class="blog-post__icon" width="65" height="65">
+                                </section>
+                                <section class="blog-post__text-section">
+                                    <p class="blog-post__theme">Tree</p>
+                                    <h3 class="blog-post__heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, a!</h3>
+                                    <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur eos impedit. Id saepe consequuntur, ad similique accusantium maxime facilis.</p>
+                                    <p class="blog-post__num">02</p>
+                                </section>
+                            </article>
+                        </div>
+<!--ARTICLE 3-->
+                        <article class="blog-post blog-post_orient_vert journal__post">
+                            <section class="blog-post__graph-section">
+                               <img src="img/journal/post3.jpg" alt="Post's image" width="380" height="380" class="blog-post__img">
+                               <img src="img/journal/drop_x2.png" alt="leaf icon" class="blog-post__icon" width="59" height="74">
                             </section>
-                            
+                            <section class="blog-post__text-section">
+                                <p class="blog-post__theme">Water</p>
+                                <h3 class="blog-post__heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, a!</h3>
+                                <p class="blog-post__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur eos impedit. Id saepe consequuntur, ad similique accusantium maxime facilis.</p>
+                                <p class="blog-post__num">03</p>
+                            </section>
+                        </article>
+                    </div>
+                </section>
+<!--
                 OFFER SECTION
                             <section class="offer">
                                 <div class="offer-wrapper">
@@ -256,7 +261,9 @@
                                 </li>
                             </ul>
                             <p class="footer__copy">All rights reserved &copy;2018</p>
-                        </footer> -->
+                        </footer> 
+-->
         </div>
     </body>
 </html>
+                            

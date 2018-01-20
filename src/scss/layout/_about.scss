@@ -1,3 +1,66 @@
 .about {
-    background-color: pink;
+    width: 100%;
+    height: 670px;
+    
+    position: relative;
+    background-color: #f6f4f4;
+    
+    &__content-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        max-width: 1170px;
+        margin: auto;
+        
+        background-image: url(../../img/blog/blog_bg.png);
+        background-repeat: no-repeat;
+        background-position: 115px 20px;
+    }
+    
+    &__heading {
+        margin-top: 200px;
+        padding-top: 45px;
+        
+        background-image: url(../../img/scheme/wave_x3.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 80px 7px;
+    }
+    
+    &__descr {
+        margin-top: 30px;
+    }
+    
+    &__btn {
+        width: 130px;
+        height: 40px;
+        margin-top: 30px;
+        
+        background-color: #36aeea;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        transition: all .3s;
+        
+        &:hover {
+            color: #36aeea;
+            background-color: #fff;
+            border-color: #36aeea;
+        }
+
+    }
+    
+    &__img {
+        position: absolute;
+        
+        &:nth-of-type(1) {
+            left: 44.271%;
+            top: 270px;
+            z-index: 1;
+        }
+        
+        &:nth-of-type(2) {
+            left: 48.958%;
+            top: -40px;
+        }
+    }
 }
