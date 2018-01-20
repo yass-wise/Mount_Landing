@@ -92,7 +92,7 @@ html {
         text-transform: uppercase;
         letter-spacing: 10px;
 
-            span {
+            &-line-2 {
                 font-family: $bringin;
                 font-size: 6.6rem;
                 color: #56c7ff;
@@ -113,7 +113,7 @@ html {
         font-size: 1.4rem;
         color: #fff;
         text-transform: uppercase;
-        letter-spacing: 5px;
+        letter-spacing: 4px;
     }
 
     &__btn-secondary {
@@ -121,7 +121,7 @@ html {
         font-size: 1.2rem;
         color: #36aeea;
         text-transform: uppercase;
-        letter-spacing: 5px;
+        letter-spacing: 4px;
     }
 }
 
@@ -130,6 +130,8 @@ html {
     font-size: 1.2rem;
     color: #9daeb6;
     text-transform: uppercase;
+    text-align: center;
+    line-height: 44px;
     
     &:visited {
         color: #9daeb6;
