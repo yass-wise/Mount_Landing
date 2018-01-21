@@ -1,0 +1,31 @@
+.contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+    width: 100%;
+    height: 1124px;
+    
+    background-image: url(../../img/contacts/bg_contacts_crop.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 515px;
+        height: 500px;
+        margin-top: 460px;
+        background-color: #fff;
+        
+    }
+    
+    &__heading {
+        
+    }
+    
+    &__form {
+        
+    }
+}

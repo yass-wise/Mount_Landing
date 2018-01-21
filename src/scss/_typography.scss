@@ -246,7 +246,6 @@ html {
         font-family: $os-reg;
         font-size: 1.4rem;
         color: #36aeea;
-        line-height: 3.4rem;
         letter-spacing: normal;
     }
 }
@@ -254,12 +253,21 @@ html {
 // **************************************** ORDER-FORM BLOCK
 
 .order-form {
-    label {
+    &__input-name,
+    &__input-phone,
+    label[for="name"],
+    label[for="phone"] {
         font-family: $os-reg;
         font-size: 1.6rem;
         color: #848484;
         line-height: 1;
         letter-spacing: normal;
+    }
+    
+    &__input-name,
+    &__input-phone {
+        font-family: $os-bold;
+        color: #36aeea;
     }
     
     &__input-btn {
@@ -281,16 +289,15 @@ html {
         font-family: $os-bold;
         font-size: 3rem;
         color: $color-h2;
-        line-height: 4.4rem;
         text-transform: uppercase;
         letter-spacing: normal;
+        text-align: center;
     }
     
     &__stage-num {
         font-family: $rob-black;
         font-size: 1.6rem;
         color: #3bb0eb;
-        line-height: 5rem;
         text-transform: uppercase;
     }
     
@@ -298,14 +305,14 @@ html {
         font-family: $rob-black;
         font-size: 1.6rem;
         color: $color-h2;
-        line-height: 2.4rem;
     }
     
     &__stage-descr {
         font-family: $rob-light;
         font-size: 1.6rem;
         color: #adadad;
-        line-height: 2.4rem;        
+        line-height: 2.4rem; 
+        text-align: center;
     }
 }
 
@@ -317,9 +324,9 @@ html {
     font-family: $os-bold;
     font-size: 3rem;
     color: $color-h2;
-    line-height: 4.4rem;
     text-transform: uppercase;
     letter-spacing: normal;
+    text-align: center;
 }
 
 //***********************************************************************************
@@ -330,9 +337,9 @@ html {
     font-family: $os-bold;
     font-size: 3rem;
     color: $color-h2;
-    line-height: 4.4rem;
     text-transform: uppercase;
     letter-spacing: normal;
+    text-align: center;
 }
 
 // **************************************** FEEDBACK-POST BLOCK
@@ -344,14 +351,20 @@ html {
         font-size: 1.8rem;
         color: #adadad;
         line-height: 3.3rem;
+        text-align: justify;
+        
+        &:before {
+            font-family: $os-reg;
+            font-size: 92px;
+            color: #758697;
+        }
     }
     
     &__usr-name,
     &__usr-profession {
-        font-family: $os-reg;
+        font-family: $rob-black;
         font-size: 1.8rem;
         color: #36aeea;
-        line-height: 3.3rem;
     }
     
     &__usr-name {

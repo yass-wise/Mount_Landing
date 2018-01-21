@@ -1,0 +1,81 @@
+.work {
+    width: 100%;
+    height: 1080px;
+    
+    background-image: url(../../img/work/scheme_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    
+    &__heading {
+        margin: auto;
+        margin-top: 70px;
+        padding-top: 45px;
+        
+        background-image: url(../../img/work/wave_x3.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 80px 7px;
+        
+    }
+    
+    &__stage-list {
+        max-width: 1170px;
+        margin: auto;
+        margin-top: 75px;
+        
+        background-image: url(../../img/work/h_line_dashed.png);
+        background-repeat: no-repeat;
+        background-position: 131px 24px;
+        background-size: 75% 2px;
+        
+    }
+    
+    &__stage-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    &__stage-num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 48px;
+        padding-bottom: 60px;
+        
+        background-image: url(../../img/work/circle_x4.png), 
+                          url(../../img/work/v_line.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top center, 24px 24px;
+        background-size: 48px 48px, auto;
+        
+        line-height: 48px;
+    }
+    
+    &__stage-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 179px;
+        height: 179px;
+        
+        background-image: url(../../img/work/polygon_x2.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 179px 179px;
+        
+    }
+    
+    &__stage-title {
+        margin-top: 30px;
+    }
+    
+    &__stage-descr {
+        width: 205px;
+        margin-top: 10px;
+    }
+
+}

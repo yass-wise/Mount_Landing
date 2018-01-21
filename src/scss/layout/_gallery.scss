@@ -1,0 +1,28 @@
+.gallery {
+    width: 100%;
+    height: 940px;
+    
+    &__heading {
+        margin: auto;
+        margin-top: 70px;
+        padding-top: 40px;
+        
+        background-image: url(../../img/work/wave_x3.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 80px 7px;
+    }
+    
+    &__content-wrapper {
+        max-width: 1170px;
+        margin: auto;
+        margin-top: 70px;
+    }
+    
+    @for $i from 1 through 3 {
+        &__col-#{$i} img:nth-child(n+1){
+            margin-top: 30px;
+        }
+    }
+
+}
