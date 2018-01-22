@@ -2,11 +2,44 @@
     width: 100%;
     height: 698px;
     background: {
-        image: url("../../img/header/bg_header.jpg");
+        image: url("../img/header/bg_header.jpg");
         repeat: no-repeat;
         position: top left;
         size: 1920px 698px;
     }
+    
+    // ************************************* RWD breakpoints 
+    
+    @include breakpoint(laptop) {
+        background: {
+            image: url("../img/header/bg_header_1600.jpg");
+            position: top center;
+            size: 1600px 698px;
+        }
+    }
+    
+    @include breakpoint(tablet) {
+        background: {
+            image: url("../img/header/bg_header_900_.jpg");
+            position: top center;
+            size: 900px 698px;
+        }
+        &__menu,
+        &__btn-secondary {
+            display: none;
+        }
+    }
+    
+    @include breakpoint(mobile) {
+        height: 600px;
+        background: {
+            image: url("../img/header/bg_header_600.jpg");
+            position: top left;
+            size: 600px 600px;
+        }
+    }
+    
+    // ******************************************** end RWD
     
     &__top-panel {        
         display: flex;
@@ -18,6 +51,7 @@
         height: 88px;
         
         background-color: rgba(white, .23);
+        
     }
     
     &__top-panel-wrapper {
@@ -42,6 +76,7 @@
         
         height: inherit;
         margin-left: 15px;
+
     }
     
     &__menu {

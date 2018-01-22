@@ -29,9 +29,9 @@ $color-main: #36aeea;
 // RWD mixins
 
 $mobile:   599px;
-$tablet:   600px;
-$laptop:   1200px;
-$desktop:  1600px;
+$tablet:   899px;
+$laptop:   1599px;
+$desktop:  1919px;
 
 @mixin breakpoint($point) {
     
@@ -40,15 +40,15 @@ $desktop:  1600px;
     }
     
     @else if $point == tablet {
-        @media screen and (min-width: $tablet) { @content ; }
+        @media screen and (max-width: $tablet) { @content ; }
     }
     
     @else if $point == laptop {
-        @media screen and (min-width: $laptop) { @content ; }
+        @media screen and (max-width: $laptop) { @content ; }
     }
     
     @else if $point == desktop {
-        @media screen and (min-width: $desktop) { @content ; }
+        @media screen and (max-width: $desktop) { @content ; }
     }
 }
 
