@@ -177,6 +177,7 @@ html {
   text-transform: uppercase;
   text-align: center;
   line-height: 44px;
+  letter-spacing: 1px;
 }
 
 .menu__link:visited {
@@ -389,6 +390,10 @@ html {
   font-size: 1.8rem;
   color: #ccc;
   line-height: 1;
+}
+
+.contact-form__input-name:focus, .contact-form__input-phone:focus, .contact-form__input-email:focus {
+  color: #36aeea;
 }
 
 .contact-form__input-btn {
@@ -631,7 +636,7 @@ html {
   padding: 0 15px;
 }
 
-.header__wrapper-content {
+.header__content-wrapper {
   max-width: 1170px;
   margin: auto;
 }
@@ -732,7 +737,7 @@ html {
   align-items: flex-start;
   max-width: 1170px;
   margin: auto;
-  background-image: url(../../img/blog/blog_bg.png);
+  background-image: url(../../img/about/bg_about.png);
   background-repeat: no-repeat;
   background-position: 115px 20px;
 }
@@ -790,7 +795,7 @@ html {
   text-align: center;
   margin-top: 65px;
   padding-top: 45px;
-  background-image: url(../../img/scheme/wave_x3.png);
+  background-image: url(../../img/work/wave_x3.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 80px 7px;
@@ -906,7 +911,7 @@ html {
 .offer {
   width: 100%;
   height: 650px;
-  background-image: url(../../img/offer/offer_bg_new.jpg);
+  background-image: url(../../img/offer/bg_offer.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -941,7 +946,7 @@ html {
 .offer__form-submit-status {
   margin-top: 15px;
   padding-left: 25px;
-  background-image: url(../../img/offer/Lock_x4.png);
+  background-image: url(../../img/offer/lock_x4.png);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 14px 16px;
@@ -996,7 +1001,7 @@ html {
 .work {
   width: 100%;
   height: 1080px;
-  background-image: url(../../img/work/scheme_bg.jpg);
+  background-image: url(../../img/work/bg_work.jpg);
   background-repeat: no-repeat;
   background-position: left bottom;
 }
@@ -1026,6 +1031,15 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+
+.work__stage-item:hover .work__stage-num,
+.work__stage-item:hover .work__stage-icon {
+  transform: scale(1.2);
+}
+
+.work__stage-num, .work__stage-icon {
+  transition: transform .5s;
 }
 
 .work__stage-num {
@@ -1064,7 +1078,7 @@ html {
 
 .gallery {
   width: 100%;
-  height: 940px;
+  height: 900px;
 }
 
 .gallery__heading {
@@ -1168,7 +1182,7 @@ html {
   justify-content: center;
   width: 100%;
   height: 1124px;
-  background-image: url(../../img/contacts/bg_contacts_crop.png);
+  background-image: url(../../img/contacts/bg_contacts.png);
   background-repeat: no-repeat;
   background-position: left bottom;
 }
@@ -1177,10 +1191,93 @@ html {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  align-items: center;
   width: 515px;
   height: 500px;
   margin-top: 460px;
+  padding: 0 30px;
+  background-color: rgba(230, 230, 230, 0.85);
+  border-radius: 10px;
+}
+
+.contacts__heading {
+  margin-top: 40px;
+}
+
+.contacts__descr {
+  margin-top: 15px;
+}
+
+.contacts__form {
+  margin-top: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.contact-form__input-name, .contact-form__input-phone, .contact-form__input-email {
+  height: 60px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact-form__input-name:focus, .contact-form__input-phone:focus, .contact-form__input-email:focus {
+  border-color: #36aeea;
+}
+
+.contact-form__input-btn {
+  height: 70px;
+  background: none;
+  background-color: #36aeea;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  transition: all .3s;
+}
+
+.contact-form__input-btn:hover {
+  color: #36aeea;
   background-color: #fff;
+  border-color: #36aeea;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background-image: url(../../img/footer/bg_footer.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.footer__content-wrapper {
+  flex-direction: row-reverse;
+  align-items: center;
+  max-width: 1170px;
+  height: 100%;
+  margin: auto;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footer__list-item:nth-child(n+1) {
+  margin-left: 5px;
+}
+
+.footer__phone, .footer__social-list, .footer__copy {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

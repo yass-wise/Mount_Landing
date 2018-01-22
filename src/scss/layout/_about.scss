@@ -12,7 +12,7 @@
         max-width: 1170px;
         margin: auto;
         
-        background-image: url(../../img/blog/blog_bg.png);
+        background-image: url(../../img/about/bg_about.png);
         background-repeat: no-repeat;
         background-position: 115px 20px;
     }
@@ -36,15 +36,15 @@
         height: 40px;
         margin-top: 30px;
         
-        background-color: #36aeea;
+        background-color: $color-main;
         border: 2px solid transparent;
         border-radius: 4px;
         transition: all .3s;
         
         &:hover {
-            color: #36aeea;
+            color: $color-main;
             background-color: #fff;
-            border-color: #36aeea;
+            border-color: $color-main;
         }
 
     }

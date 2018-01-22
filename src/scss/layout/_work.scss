@@ -2,7 +2,7 @@
     width: 100%;
     height: 1080px;
     
-    background-image: url(../../img/work/scheme_bg.jpg);
+    background-image: url(../../img/work/bg_work.jpg);
     background-repeat: no-repeat;
     background-position: left bottom;
     
@@ -35,6 +35,17 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        
+        &:hover .work__stage-num,
+        &:hover .work__stage-icon {
+            transform: scale(1.2);
+        }
+        
+    }
+    
+    &__stage-num,
+    &__stage-icon {
+        transition: transform .5s;
     }
     
     &__stage-num {

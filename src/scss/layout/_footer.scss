@@ -1,0 +1,33 @@
+.footer {
+    width: 100%;
+    height: 80px;
+    
+    background-image: url(../../img/footer/bg_footer.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    
+    &__content-wrapper {
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 1170px;
+        height: 100%;
+        margin: auto;
+    }
+    
+    &__social-list {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    &__list-item:nth-child(n+1) {
+        margin-left: 5px;
+    }
+    
+    &__phone,
+    &__social-list,
+    &__copy {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
