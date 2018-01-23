@@ -21,6 +21,10 @@
     
     &__list-item:nth-child(n+1) {
         margin-left: 5px;
+        transition: transform .3s;
+        &:hover {
+            transform: translate(0, -10px);
+        }
     }
     
     &__phone,
@@ -29,5 +33,6 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
+        
     }
 }
