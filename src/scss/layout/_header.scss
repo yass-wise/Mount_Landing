@@ -13,11 +13,6 @@
     }
     
     &__top-panel {        
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        
         width: 100%;
         height: 88px;
         background-color: rgba(white, .23);
@@ -26,28 +21,23 @@
             height: 58px;
         }
     }
-    &__top-panel-wrapper {
-        justify-content: flex-start;
+    
+    &__limiter {
         max-width: 1170px;
-        min-width: 500px;
         height: 44px;
-        padding: 0 15px;
+        margin: auto;
+    }
+    
+    
+    &__top-panel-wrapper {
+        display: flex;
+        justify-content: flex-start;
         
         @include breakpoint(mobile) {
             min-width: none;
         }
     }
-    &__content-wrapper {  
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        max-width: 1170px;
-        margin: auto;
         
-        @include breakpoint(mobile) {
-            align-items: center;
-        }
-    }    
     &__logo {
         display: flex;
         flex-wrap: nowrap;
@@ -84,8 +74,27 @@
             display: none;
         }
     }
+    
+    //********************************************** HEADER CONTENT
+    
+    &__content-wrapper {  
+        max-width: 1170px;
+        margin: auto;
+        
+        @include breakpoint(mobile) {
+            padding: 0 15px;
+            text-align: center;
+        }
+    }    
     &__heading {
         margin: 175px 0 0 55px;
+        
+        @include breakpoint(mobile) {
+            margin: auto;
+            margin-top: 100px;
+            font-size: 3rem;
+            letter-spacing: 4px;
+        }
         
         span {display: block;}
         &-line-2 {
@@ -96,19 +105,18 @@
                 margin-top: -40px;
                 letter-spacing: 2px;
             }
-            
-        }
-
-        @include breakpoint(mobile) {
-            font-size: 3rem;
-            margin-top: 70px;
-            letter-spacing: 4px;
         }
     }
     
     &__descr {
         max-width: 435px;
         margin: 15px 0 0 55px;
+
+        @include breakpoint(mobile) {
+            width: auto;
+            margin: auto;
+            margin-top: 30px;
+        }
     }
     &__btn-main {
         width: 260px;
@@ -125,7 +133,14 @@
             background-color: #fff;
             border-color: #fff;
         }
+
+        @include breakpoint(mobile) {
+            margin: auto;
+            margin-top: 30px;
+        }
     }
+    
+    
 }
 
 //************************************************ MENU BLOCK
