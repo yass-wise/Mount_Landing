@@ -2,7 +2,11 @@
     width: 100%;
     height: 505px;
     background: transparent;
-    margin-bottom: -400px;
+//    margin-bottom: -400px;
+    
+    @include breakpoint(tablet) {
+        height: auto;
+    }
     
     &__heading {
         margin: auto;
@@ -19,6 +23,10 @@
         max-width: 1170px;
         margin: auto;
         margin-top: 90px;
+        
+        @include breakpoint(tablet) {
+            margin-bottom: 50px;
+        }
     }
 }
 
@@ -36,6 +44,11 @@
             top: -20px;
             left: 0;
         }
+        
+        @include breakpoint(tablet) {
+            margin-top: 80px;
+        }
+        
     }
     &__usr-data {
         display: flex;

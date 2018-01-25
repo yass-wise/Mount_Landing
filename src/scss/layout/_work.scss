@@ -6,6 +6,11 @@
     background-repeat: no-repeat;
     background-position: left bottom;
     
+    @include breakpoint(tablet) {
+        background: none;
+        height: auto;
+    }
+    
     &__heading {
         margin: auto;
         margin-top: 70px;
@@ -28,6 +33,12 @@
         background-position: 131px 24px;
         background-size: 75% 2px;
         
+        @include breakpoint(tablet) {
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            background: none;
+        }
+        
     }
     
     &__stage-item {
@@ -39,6 +50,10 @@
         &:hover .work__stage-num,
         &:hover .work__stage-icon {
             transform: scale(1.2);
+        }
+        
+        @include breakpoint(tablet) {
+            margin-bottom: 50px;
         }
         
     }
