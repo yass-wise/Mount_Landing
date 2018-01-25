@@ -8,24 +8,35 @@
         size: 1920px 698px;
         
     }
-    @include breakpoint(mobile) {
-
+    @include breakpoint(tablet) {
+        height: auto;
     }
     
     &__top-panel {        
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        
         width: 100%;
         height: 88px;
         background-color: rgba(white, .23);
         
-        @include breakpoint(mobile) {
-            height: 58px;
+        @include breakpoint(tablet) {
+            height: 60px;
         }
     }
     
     &__limiter {
-        max-width: 1170px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex: 0 1 1170px;
         height: 44px;
-        margin: auto;
+
+        @include breakpoint(mobile) {
+            flex-direction: row;
+        }
     }
     
     
@@ -33,9 +44,6 @@
         display: flex;
         justify-content: flex-start;
         
-        @include breakpoint(mobile) {
-            min-width: none;
-        }
     }
         
     &__logo {
@@ -46,8 +54,8 @@
         height: inherit;
         margin-left: 15px;
         
-        @include breakpoint(mobile) {
-            font-size: 2.5rem;
+        @include breakpoint(tablet) {
+            font-size: 2rem;
         }
     }
     &__menu {
@@ -81,17 +89,23 @@
         max-width: 1170px;
         margin: auto;
         
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             padding: 0 15px;
             text-align: center;
         }
+        
     }    
     &__heading {
         margin: 175px 0 0 55px;
         
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             margin: auto;
-            margin-top: 100px;
+            margin-top: 80px;
+            font-size: 4.5rem;
+            letter-spacing: 5px;
+        }
+        
+        @include breakpoint(mobile) {
             font-size: 3rem;
             letter-spacing: 4px;
         }
@@ -100,10 +114,14 @@
         &-line-2 {
             margin-top: -70px;
             
+            @include breakpoint(tablet) {
+                font-size: 5.5rem;
+                letter-spacing: 2px;
+                margin-top: -60px;
+            }
             @include breakpoint(mobile) {
                 font-size: 4rem;
-                margin-top: -40px;
-                letter-spacing: 2px;
+                margin-top: -45px;
             }
         }
     }
@@ -112,12 +130,13 @@
         max-width: 435px;
         margin: 15px 0 0 55px;
 
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             width: auto;
             margin: auto;
             margin-top: 30px;
         }
     }
+    
     &__btn-main {
         width: 260px;
         height: 60px;
@@ -134,9 +153,13 @@
             border-color: #fff;
         }
 
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             margin: auto;
-            margin-top: 30px;
+            margin-top: 80px;
+            margin-bottom: 100px;
+        }
+        @include breakpoint(mobile) {
+            height: 50px;
         }
     }
     
@@ -196,6 +219,10 @@
             image: url("../img/header/bg_header_600.jpg");
             position: top left;
             size: 600px 600px;
+        }
+        &__menu,
+        &__btn-secondary {
+            display: none;
         }
     }
     

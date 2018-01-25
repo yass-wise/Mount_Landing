@@ -28,10 +28,12 @@ $color-main: #36aeea;
 
 // RWD mixins
 
-$mobile:   599px;
-$tablet:   899px;
-$laptop:   1599px;
-$desktop:  1919px;
+$mobile:     599px;
+$mobile-j:   800px;  // custom breakpoint for JOURNAL section
+$tablet:     899px;
+$tablet-j:   1170px; // custom breakpoint for JOURNAL section
+$laptop:     1599px;
+$desktop:    1600px;
 
 @mixin breakpoint($point) {
     
@@ -39,8 +41,16 @@ $desktop:  1919px;
         @media screen and (max-width: $mobile)  { @content ; }
     }
     
+    @if $point == mobile-j {
+        @media screen and (max-width: $mobile-j)  { @content ; }
+    }
+    
     @else if $point == tablet {
         @media screen and (max-width: $tablet) { @content ; }
+    }
+    
+    @else if $point == tablet-j {
+        @media screen and (max-width: $tablet-j) { @content ; }
     }
     
     @else if $point == laptop {
@@ -48,7 +58,7 @@ $desktop:  1919px;
     }
     
     @else if $point == desktop {
-        @media screen and (max-width: $desktop) { @content ; }
+        @media screen and (min-width: $desktop) { @content ; }
     }
 }
 

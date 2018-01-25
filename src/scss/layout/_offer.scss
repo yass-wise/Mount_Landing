@@ -5,8 +5,11 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     
+    @include breakpoint(tablet) {
+        background-image: url(../img/offer/bg_offer_900.jpg);
+    }
+    
     &__content-wrapper {
-        display: flex;
         flex-direction: column;
         align-items: flex-start;
         max-width: 1170px;
@@ -19,13 +22,25 @@
         
         background-image: url(../img/work/wave_x3.png);
         background-repeat: no-repeat;
-        background-position: 0 0;
         background-size: 80px 7px;
+        
+        @include breakpoint(tablet) {
+            margin-top: 50px;
+            text-align: center;
+            align-self: center;
+            background-position: top center;
+        }
+        
     }
     
     &__descr {
         margin-top: 25px;
         max-width: 700px;
+
+        @include breakpoint(tablet) {
+            text-align: center;
+            align-self: center;
+        }
     }
     
     &__form {
@@ -57,6 +72,17 @@
     background-color: #fff;
     border-radius: 5px;
     
+    @include breakpoint(tablet) {
+        flex-direction: column;
+        max-width: 600px;
+        height: auto;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    
+    
+    
     label {
         margin-left: 20px;
     }
@@ -72,6 +98,12 @@
         
         &:focus {
             border-bottom: 1px solid $color-main;
+        }
+        
+        @include breakpoint(tablet) {
+            height: 56px;
+            margin-bottom: 25px;
+            width: 100%;
         }
     }
     
@@ -92,6 +124,9 @@
             border-color: $color-main;
         }
 
+        @include breakpoint(tablet) {
+            margin-left: 0;
+        }
     }
 }
 

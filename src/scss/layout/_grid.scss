@@ -14,7 +14,7 @@ $gutter-width: 15px; // gutter width
 //              FLEX-GRID for MOBILES
 //---------------------------------------------
 
-@media screen and (min-width: $br-xsm) {
+@media screen and (max-width: $br-xsm) {
 
 // grid container
     .grid-box {

@@ -1,5 +1,5 @@
 .journal {
-    height: 1060px;
+//    height: 1060px;
     &__heading {
         width: 100%;
         text-align: center;
@@ -9,17 +9,39 @@
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 80px 7px;
+        
+        @include breakpoint(tablet) {
+            font-size: 2rem;
+        }
+        
     }
     
     &__post-container {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        align-items: center;
         
         margin: auto;
         margin-top: 70px;
-        max-width: 1140px;
+        margin-bottom: 50px;
+        width: 1140px;
         
         box-shadow: 0 0 30px 0 rgba(black, .15);
+        
+        @include breakpoint(tablet-j) {
+            flex-direction: column;
+            width: 760px;
+        }
+        @include breakpoint(mobile-j) {
+            width: 380px;
+        }
+    }
+    
+    &__post-wrapper-2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
     }
     
 }
@@ -30,6 +52,34 @@
 .blog-post {
     display: flex;
     flex-wrap: nowrap;
+//    width: 760px;
+    
+    &_1 {
+        @include breakpoint(mobile-j) {
+            flex-direction: column;
+        }
+        
+    }
+    
+    &_2 {
+        flex-direction: row-reverse; 
+        @include breakpoint(mobile-j) {
+            flex-direction: column;
+        }
+
+    }
+    
+    &_3 {
+        flex-direction: column;
+        
+        @include breakpoint(tablet-j) {
+            flex-direction: row;
+        }
+        @include breakpoint(mobile-j) {
+            flex-direction: column;
+        }
+
+    }
     
     
     &__graph-section {
@@ -43,6 +93,7 @@
         height: 380px;
         
         position: relative;
+        
         
         &:hover {
             & .blog-post__icon {
@@ -70,7 +121,7 @@
         justify-content: flex-start;
         flex: 1;
         
-        min-width: 380px;
+        width: 380px;
         height: 380px;
         position: relative;
         
@@ -83,41 +134,41 @@
         
         // ***************************** TEXT SECTION  modifiers (white arrow positions)
         
-        &_arrow_left {
-        
-            &:before {
-                @extend %arrow-props;
-                top: 40px;
-                left: -10px;
-                border-right: 10px solid #fff;
-                border-top: 10px solid transparent;
-                border-bottom: 10px solid transparent;
-            }
-        }
-        
-        &_arrow_right {
-            
-            &:before {
-                @extend %arrow-props;
-                top: 40px;
-                right: -10px;
-                border-left: 10px solid #fff;
-                border-top: 10px solid transparent;
-                border-bottom: 10px solid transparent;
-            }
-        }
-        
-        &_arrow_top {
-        
-            :before {
-                @extend %arrow-props;
-                top: -10px;
-                left: 40px;
-                border-bottom: 10px solid #fff;
-                border-left: 10px solid transparent;
-                border-right: 10px solid transparent;
-            }
-        }
+//        &_arrow_left {
+//        
+//            &:before {
+//                @extend %arrow-props;
+//                top: 40px;
+//                left: -10px;
+//                border-right: 10px solid #fff;
+//                border-top: 10px solid transparent;
+//                border-bottom: 10px solid transparent;
+//            }
+//        }
+//        
+//        &_arrow_right {
+//            
+//            &:before {
+//                @extend %arrow-props;
+//                top: 40px;
+//                right: -10px;
+//                border-left: 10px solid #fff;
+//                border-top: 10px solid transparent;
+//                border-bottom: 10px solid transparent;
+//            }
+//        }
+//        
+//        &_arrow_top {
+//        
+//            :before {
+//                @extend %arrow-props;
+//                top: -10px;
+//                left: 40px;
+//                border-bottom: 10px solid #fff;
+//                border-left: 10px solid transparent;
+//                border-right: 10px solid transparent;
+//            }
+//        }
     }
     
   //****************************************************** end section modifiers  
@@ -141,18 +192,84 @@
         margin-top: 40px;
     }
     
-//    BLOG-POST block modifiers
-    
-    &_orient_vert {                 // vertical direction of article sections
-        flex-direction: column;
-    }
-    &_reversed {                    // reversed direction of article sections
-        flex-direction: row-reverse;
-    }
-    
+////    BLOG-POST block modifiers
+//    
+//    &_orient_vert {                 // vertical direction of article sections
+//        flex-direction: column;
+//    }
+//    &_reversed {                    // reversed direction of article sections
+//        flex-direction: row-reverse;
+//    }
+//    
 }
 
+.text-section {
+    &-1:before {
+        @extend %arrow-props;
+        top: 40px;
+        left: -10px;
+        border-right: 10px solid #fff;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    &-2:before {
+        @extend %arrow-props;
+        top: 40px;
+        right: -10px;
+        border-left: 10px solid #fff;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        
+        @include breakpoint(mobile-j) {
+            content: "";
+            display: block;
+            position: absolute;
 
+            top: -20px;
+            left: 40px;
+            right: auto;
+            border-bottom: 10px solid #fff;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent; 
+
+        }
+    }
+    &-3:before {
+        @extend %arrow-props;
+        top: -10px;
+        left: 40px;
+        border-bottom: 10px solid #fff;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        
+        @include breakpoint(tablet-j) {
+            content: "";
+            display: block;
+            position: absolute;
+
+            top: 40px;
+            left: -20px;
+            border-right: 10px solid #fff;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+    }
+    
+    &-1:before,
+    &-3:before {
+        @include breakpoint(mobile-j) {
+            content: "";
+            display: block;
+            position: absolute;
+
+            top: -20px;
+            left: 40px;
+            border-bottom: 10px solid #fff;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent; 
+        }
+    }
+}
 
 
 

@@ -1,30 +1,52 @@
 .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
     width: 100%;
     height: 670px;
     
     position: relative;
     background-color: #f6f4f4;
+
+    @include breakpoint(tablet) {
+        height: auto;
+    }
     
-    &__content-wrapper {
-        flex-direction: column;
-        align-items: flex-start;
-        
-        max-width: 1170px;
-        margin: auto;
-        
+    &__limiter {
+        flex: 0 1 1170px;
+
         background-image: url(../img/about/bg_about.png);
         background-repeat: no-repeat;
         background-position: 115px 20px;
+
+        @include breakpoint(mobile) {
+            background: none;
+        }
+    }
+    
+    &__content-wrapper {
+
+        @include breakpoint(mobile) {
+            text-align: center;
+        }
     }
     
     &__heading {
         margin-top: 200px;
         padding-top: 45px;
         
-        background-image: url(../img/scheme/wave_x3.png);
+        background-image: url(../img/work/wave_x3.png);
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: 80px 7px;
+        
+        @include breakpoint(tablet) {
+            margin-top: 50px;
+        }
+        @include breakpoint(mobile) {
+            background-position: center top;
+        }
     }
     
     &__descr {
@@ -47,20 +69,48 @@
             border-color: $color-main;
         }
 
+        @include breakpoint(tablet) {
+            margin-bottom: 50px;
+        }
     }
-    
+    &__img-wrapper {
+        @include breakpoint(tablet) {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+        @include breakpoint(mobile) {
+            display: none;
+        }
+        
+    }
     &__img {
         position: absolute;
+        overflow: hidden;
         
         &:nth-of-type(1) {
             left: 44.271%;
             top: 270px;
             z-index: 1;
+            @include breakpoint(tablet) {
+                display: none;
+            }
         }
         
         &:nth-of-type(2) {
             left: 48.958%;
             top: -40px;
+            @include breakpoint(tablet) {
+                width: calc(806px * 0.6);
+                height: calc(570px * 0.6);
+                margin-top: 50px;
+                position: static;
+                transform: translate(0, -70px);
+            }
+        }
+        
+        @include breakpoint(mobile) {
+            display: none;
         }
     }
 }
