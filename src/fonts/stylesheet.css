@@ -70,3 +70,22 @@
     font-style: normal;
 
 }
+
+
+
+
+
+
+
+@font-face {
+    
+   font-family: 'league_gothicCnRg';
+    
+    src: url('leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+         
+         url('leaguegothic-condensedregular-webfont.woff') format('woff');
+    
+   font-weight: normal;
+    
+   font-style: normal;
+}

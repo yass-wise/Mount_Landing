@@ -122,6 +122,13 @@ input[type="submit"] {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'league_gothicCnRg';
+  src: url("leaguegothic-condensedregular-webfont.woff2") format("woff2"), url("leaguegothic-condensedregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -356,12 +363,6 @@ html {
   color: #adadad;
   line-height: 3.3rem;
   text-align: justify;
-}
-
-.feedback-post__descr:before {
-  font-family: "open_sansregular";
-  font-size: 92px;
-  color: #758697;
 }
 
 .feedback-post__usr-name, .feedback-post__usr-profession {
@@ -1643,8 +1644,8 @@ html {
 @media screen and (max-width: 599px) {
   .logos__item {
     flex-wrap: wrap;
-    margin-bottom: 30px;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1679,26 +1680,18 @@ html {
 @media screen and (max-width: 899px) {
   .clients__content-wrapper {
     margin-bottom: 50px;
+    flex-direction: column;
   }
 }
 
 .feedback-post__descr {
   margin-top: 20px;
+  padding-top: 24px;
   position: relative;
-}
-
-.feedback-post__descr:before {
-  display: block;
-  content: "\0022";
-  position: absolute;
-  top: -20px;
-  left: 0;
-}
-
-@media screen and (max-width: 899px) {
-  .feedback-post__descr {
-    margin-top: 80px;
-  }
+  background-image: url(../img/clients/quotes.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 24px 22px;
 }
 
 .feedback-post__usr-data {

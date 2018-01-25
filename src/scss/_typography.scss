@@ -59,6 +59,14 @@
 
 }
 
+@font-face {
+    font-family: 'league_gothicCnRg';
+    src: url('leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+         url('leaguegothic-condensedregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 //***********************************************************************************
 //                                                                    COMMON STYLES
 //***********************************************************************************
@@ -354,11 +362,11 @@ html {
         line-height: 3.3rem;
         text-align: justify;
         
-        &:before {
-            font-family: $os-reg;
-            font-size: 92px;
-            color: #758697;
-        }
+//        &:before {
+//            font-family: $gothic;
+//            font-size: 92px;
+//            color: #758697;
+//        }
     }
     
     &__usr-name,

@@ -32,8 +32,8 @@
         text-align: center;
         @include breakpoint(mobile) {
             flex-wrap: wrap;
-            margin-bottom: 30px;
             margin-top: 30px;
+            margin-bottom: 30px;
         }
         
     }
