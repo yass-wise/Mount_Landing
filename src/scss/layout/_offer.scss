@@ -80,11 +80,15 @@
         padding: 20px;
     }
 
-    
-    
-    
     label {
         margin-left: 20px;
+    }
+    
+    &__input-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin-bottom: 25px;
     }
     
     &__input-name,
@@ -102,7 +106,6 @@
         
         @include breakpoint(tablet) {
             height: 56px;
-            margin-bottom: 25px;
             width: 100%;
         }
     }

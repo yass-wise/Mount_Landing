@@ -1382,6 +1382,13 @@ html {
   margin-left: 20px;
 }
 
+.order-form__input-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
 .order-form__input-name, .order-form__input-phone {
   flex: 1;
   min-width: 180px;
@@ -1398,7 +1405,6 @@ html {
 @media screen and (max-width: 899px) {
   .order-form__input-name, .order-form__input-phone {
     height: 56px;
-    margin-bottom: 25px;
     width: 100%;
   }
 }
