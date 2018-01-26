@@ -34,7 +34,7 @@ $mobile-j:   800px;  // custom breakpoint for JOURNAL section
 $tablet:     899px;
 $tablet-j:   1170px; // custom breakpoint for JOURNAL section
 $laptop:     1599px;
-$desktop:    1600px;
+$desktop:    1920px;
 
 @mixin breakpoint($point) {
     
@@ -59,7 +59,7 @@ $desktop:    1600px;
     }
     
     @else if $point == desktop {
-        @media screen and (min-width: $desktop) { @content ; }
+        @media screen and (max-width: $desktop) { @content ; }
     }
 }
 

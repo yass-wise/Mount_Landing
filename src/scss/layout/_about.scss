@@ -20,6 +20,10 @@
         background-repeat: no-repeat;
         background-position: 115px 20px;
 
+        @include breakpoint(tablet) {
+            background-size: contain;
+        }
+        
         @include breakpoint(mobile) {
             background: none;
         }

@@ -10,7 +10,7 @@
     background-color: #f8f9fa;
     
     &__content-wrapper {
-        max-width: 1170px;
+        max-width: 1200px;
         height: inherit;
         margin: auto;
 //        margin-top: 70px;
@@ -20,7 +20,7 @@
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
-        justify-content: space-between;
+        width: 100%;
         
         @include breakpoint(tablet) {
             flex-direction: row;

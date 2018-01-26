@@ -9,15 +9,22 @@
         background-image: url(../img/offer/bg_offer_900.jpg);
     }
     
+    &__content-limiter {
+        @include breakpoint(mobile) {
+            flex-direction: row;
+        }
+        
+    }
+    
     &__content-wrapper {
         flex-direction: column;
         align-items: flex-start;
         max-width: 1170px;
         margin: auto;
         
-        @include breakpoint(tablet) {
-            justify-content: center;
-        }
+//        @include breakpoint(tablet) {
+//            justify-content: center;
+//        }
         
     }
     
@@ -32,7 +39,6 @@
         @include breakpoint(tablet) {
             margin-top: 50px;
             text-align: center;
-            align-self: center;
             background-position: top center;
         }
         
@@ -44,7 +50,7 @@
 
         @include breakpoint(tablet) {
             text-align: center;
-            align-self: center;
+            max-width: none;
         }
     }
     
@@ -53,12 +59,13 @@
         margin-top: 25px;
        
         @include breakpoint(tablet) {
-            align-self: center;
+            
         }
         
     }
     
     &__form-submit-status {
+        width: 250px;
         margin-top: 15px;
         padding-left: 25px;
         
@@ -68,7 +75,10 @@
         background-size: 14px 16px;
         
         @include breakpoint(tablet) {
-            align-self: center;
+            margin: auto;
+            margin-top: 15px;
+            text-align: center;
+            background-color: rgba(white, .5);
         }
         
     }
@@ -79,7 +89,7 @@
 .order-form {
     display: flex;
     flex-wrap: nowrap;
-    max-width: 885px;
+//    max-width: 885px;
     height: 62px;
     padding: 3px;
     
@@ -88,13 +98,11 @@
     
     @include breakpoint(tablet) {
         flex-direction: column;
-        align-items: stretch;
         max-width: 600px;
         height: auto;
         padding: 20px;
+        margin: auto;
         margin-top: 50px;
-        margin-right: 15px;
-        margin-left: 15px;
     }
 
     
@@ -102,12 +110,14 @@
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+        margin-right: 20px;
         
         label {
             margin-left: 20px;
+            width: 100px;
             
             @include breakpoint(tablet) {
-                width: 140px;
+                min-width: 100px;
             }
             
         }
