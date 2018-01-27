@@ -10,6 +10,8 @@
     }
     
     &__content-limiter {
+        max-width: 1170px;
+        margin: auto;
         @include breakpoint(mobile) {
             flex-direction: row;
         }
@@ -19,8 +21,6 @@
     &__content-wrapper {
         flex-direction: column;
         align-items: flex-start;
-        max-width: 1170px;
-        margin: auto;
         
 //        @include breakpoint(tablet) {
 //            justify-content: center;
@@ -59,7 +59,7 @@
         margin-top: 25px;
        
         @include breakpoint(tablet) {
-            
+            box-shadow: 0 0 20px 0 rgba(200,200,200, .7);
         }
         
     }

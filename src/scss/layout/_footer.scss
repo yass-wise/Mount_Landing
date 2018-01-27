@@ -6,17 +6,34 @@
     background-repeat: no-repeat;
     background-position: left top;
     
+    @include breakpoint(mobile) {
+        height: auto;
+        background: none;
+        background-color: #3c535a;
+        padding: 20px;
+    }
+    
     &__content-wrapper {
         flex-direction: row-reverse;
         align-items: center;
         max-width: 1170px;
         height: 100%;
         margin: auto;
+
+        @include breakpoint(mobile) {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            height: auto;
+        }
     }
     
     &__social-list {
         display: flex;
         flex-wrap: nowrap;
+        
+        @include breakpoint(mobile) {
+            margin-top: 20px;
+        }
     }
     
     &__list-item:nth-child(n+1) {
@@ -33,6 +50,22 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
-        
     }
+    
+    &__phone {
+        @include breakpoint(tablet) {
+            font-size: 2.3rem;
+        }
+    }
+    
+    &__copy {
+        @include breakpoint(tablet) {
+            font-size: 1.4rem;
+        }
+        @include breakpoint(mobile) {
+            margin-top: 20px;
+        }
+    }
+    
+    
 }

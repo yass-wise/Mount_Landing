@@ -11,6 +11,26 @@
     </head>
     
     <body>
+<!--
+       <nav class="mob-nav">
+          
+           <ul class="mob-nav__list">
+               <li class="mob-nav__item"><a href="#story">Our story</a></li>
+               <li class="mob-nav__item"><a href="#journal">Journal</a></li>
+               <li class="mob-nav__item"><a href="#offer">Offer</a></li>
+               <li class="mob-nav__item"><a href="#work">Work</a></li>
+               <li class="mob-nav__item"><a href="#gallery">Gallery</a></li>
+               <li class="mob-nav__item"><a href="#reviews">Reviews</a></li>
+               <li class="mob-nav__item"><a href="#contacts">Contacts</a></li>
+           </ul>
+           
+       </nav>
+       
+       <input type="checkbox" id="mob-nav__trigger" class="mob-nav__trigger" >
+       <label for="mob-nav__trigger"></label>
+-->
+       
+       
         <div class="page-wrapper">
 <!--HEADER SECTION-->
             <header class="header">
@@ -59,11 +79,11 @@
             <main class="main-content">
                         
 <!--ABOUT SECTION-->
-                <section class="about">
+                <section class="about" id="story">
 
                     <div class="about__limiter grid-box">
                        
-                        <div class="about__content-wrapper cell-sm-4 cell-xsm-12">
+                        <div class="about__content-wrapper cell-sm-4 cell-md-4 cell-xsm-12">
                             <h2 class="about__heading">About us</h2>
                             <p class="about__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum iure soluta, corporis explicabo, autem porro amet aliquid in quas at.</p>
                             <button type="button" class="about__btn">Read more</button>
@@ -128,7 +148,7 @@
                 </section>
                            
 <!--OFFER SECTION-->
-                <section class="offer">
+                <section class="offer" id="offer">
                     <div class="offer__content-limiter grid-box">
                        
                         <div class="offer__content-wrapper cell-md-9 cell-sm-12 cell-xsm-12">
@@ -262,30 +282,28 @@
                     </div>
                 </section>
                             
-<!--
                             
-                            CONTACTS SECTION
-                                            <section class="contacts">
-                            
-                                                <div class="contacts__content-wrapper">
-                                                        <h2 class="contacts__heading">Contacts</h2>
-                                                        <p class="contacts__descr">Sign up for our newsletter to recieve updates</p>
-                                                        <form class="contact-form contacts__form" action="" method="post">
-                                                            <input class="contact-form__input-name" type="text" name="name" placeholder="Name" required>
-                                                            <input class="contact-form__input-phone" type="tel" name="phone" placeholder="Phone" required>
-                                                            <input class="contact-form__input-email" type="email" name="email" placeholder="E-mail" required>
-                                                            <input class="contact-form__input-btn" type="submit" value="Send">
-                                                        </form>
-                                                </div>            
-                                            </section> 
+<!-- CONTACTS SECTION-->
+                <section class="contacts">
+
+                    <div class="contacts__content-wrapper">
+                            <h2 class="contacts__heading">Contacts</h2>
+                            <p class="contacts__descr">Sign up for our newsletter to recieve updates</p>
+                            <form class="contact-form contacts__form" action="" method="post">
+                                <input class="contact-form__input-name" type="text" name="name" placeholder="Name" required>
+                                <input class="contact-form__input-phone" type="tel" name="phone" placeholder="Phone" required>
+                                <input class="contact-form__input-email" type="email" name="email" placeholder="E-mail" required>
+                                <input class="contact-form__input-btn" type="submit" value="Send">
+                            </form>
+                    </div>            
+                </section> 
             </main>
--->
 
 <!--FOOTER-->
             <footer class="footer">
                 <div class="footer__content-wrapper grid-box">   
-                    <p class="footer__phone cell-sm-4">1 234 234 123</p>
-                    <ul class="footer__social-list cell-sm-4">
+                    <p class="footer__phone cell-sm-4 cell-xsm-12">1 234 234 123</p>
+                    <ul class="footer__social-list cell-sm-4 cell-xsm-12">
                         <li class="footer__list-item">
                             <a href="https://www.twitter.com" target="_blank" class="footer__link">
                                 <img src="img/footer/twitter.jpg" alt="twitter" class="footer__icon-twitter">
@@ -302,7 +320,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="footer__copy cell-sm-4">All rights reserved &copy;2018</p>
+                    <p class="footer__copy cell-sm-4 cell-xsm-12">All rights reserved &copy;2018</p>
                 </div>
             </footer> 
         </div>

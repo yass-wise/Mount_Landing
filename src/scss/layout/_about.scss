@@ -88,7 +88,9 @@
         }
         
     }
+    
     &__img {
+        display: block;
         position: absolute;
         overflow: hidden;
         
@@ -96,14 +98,16 @@
             left: 44.271%;
             top: 270px;
             z-index: 1;
-            @include breakpoint(tablet) {
+            @include breakpoint(laptop) {
                 display: none;
             }
         }
         
+        
         &:nth-of-type(2) {
             left: 48.958%;
             top: -40px;
+            
             @include breakpoint(tablet) {
                 width: calc(806px * 0.6);
                 height: calc(570px * 0.6);

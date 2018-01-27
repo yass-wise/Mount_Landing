@@ -2,10 +2,11 @@
     width: 100%;
     height: 505px;
     background: transparent;
-//    margin-bottom: -400px;
+    margin-bottom: -400px;
     
     @include breakpoint(tablet) {
         height: auto;
+        margin-bottom: -100px;
     }
     
     &__heading {
@@ -34,7 +35,14 @@
 //********************************************************* FEEDBACK-POST BLOCK
 
 .feedback-post {
-    
+    @include breakpoint(tablet) {
+        background-color: rgba(0, 186, 255, 0.2);
+        box-shadow: 0 0 20px 0 rgba(grey, .45);
+        padding: 20px;
+        &:last-child {
+            margin-top: 50px;
+        }
+    }
     &__descr {
         margin-top: 20px;
         padding-top: 24px;
