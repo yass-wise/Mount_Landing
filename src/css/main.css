@@ -1134,7 +1134,7 @@ html {
 
 @media screen and (max-width: 800px) {
   .journal__post-container {
-    width: 380px;
+    width: 100%;
   }
 }
 
@@ -1425,6 +1425,12 @@ html {
   margin-right: 20px;
 }
 
+@media screen and (max-width: 899px) {
+  .order-form__input-wrapper:nth-of-type(2) {
+    margin-right: 0;
+  }
+}
+
 .order-form__input-wrapper label {
   margin-left: 20px;
   width: 100px;
@@ -1433,6 +1439,12 @@ html {
 @media screen and (max-width: 899px) {
   .order-form__input-wrapper label {
     min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .order-form__input-wrapper label {
+    min-width: 80px;
   }
 }
 

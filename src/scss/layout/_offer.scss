@@ -113,6 +113,10 @@
         
         &:nth-of-type(2) {
             margin-right: 20px;
+            
+            @include breakpoint(tablet) {
+                margin-right: 0;
+            }
         }
         
         label {
@@ -121,6 +125,9 @@
             
             @include breakpoint(tablet) {
                 min-width: 100px;
+            }
+            @include breakpoint(tablet) {
+                min-width: 80px;
             }
             
         }

@@ -33,7 +33,8 @@
             width: 760px;
         }
         @include breakpoint(mobile-j) {
-            width: 380px;
+//            width: 380px;
+            width: 100%;
         }
     }
     
