@@ -11,7 +11,7 @@
         background-size: 80px 7px;
         
         @include breakpoint(tablet) {
-            font-size: 2rem;
+            letter-spacing: 1px;
         }
         
     }

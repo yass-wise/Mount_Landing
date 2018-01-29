@@ -7,37 +7,65 @@
         <meta name="author" content="Yaroslav Usatyi">
         <meta name="description" content="Travaling to the mountains">
         <title>Travel with us</title>
+        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     
     <body>
-<!--
-       <nav class="mob-nav">
-          
-           <ul class="mob-nav__list">
-               <li class="mob-nav__item"><a href="#story">Our story</a></li>
-               <li class="mob-nav__item"><a href="#journal">Journal</a></li>
-               <li class="mob-nav__item"><a href="#offer">Offer</a></li>
-               <li class="mob-nav__item"><a href="#work">Work</a></li>
-               <li class="mob-nav__item"><a href="#gallery">Gallery</a></li>
-               <li class="mob-nav__item"><a href="#reviews">Reviews</a></li>
-               <li class="mob-nav__item"><a href="#contacts">Contacts</a></li>
-           </ul>
-           
-       </nav>
-       
-       <input type="checkbox" id="mob-nav__trigger" class="mob-nav__trigger" >
-       <label for="mob-nav__trigger"></label>
--->
-       
        
         <div class="page-wrapper">
 <!--HEADER SECTION-->
             <header class="header">
                 <div class="header__top-panel">
                     <div class="header__limiter grid-box">
-                        <div class="header__top-panel-wrapper cell-sm-12">
+                        <div class="header__top-panel-wrapper cell-sm-12 cell-xsm-12">
                             <div class="header__logo"><span>Moun</span>tains</div>
+<!--Mobile menu-->
+                            <div class="m-nav">
+                                <a href="#main-menu" 
+                                    class="menu-toggle"
+                                    role="button"
+                                    id="main-menu-toggle"
+                                    aria-expanded="false"
+                                    aria-controls="main-menu"
+                                    aria-label="Open main menu">
+                                    <span class="sr-only">Open main menu</span>
+                                    <span class="fa fa-bars" aria-hidden="true"></span>
+                                </a>
+                           
+                                <nav id="main-menu"
+                                    class="main-menu"
+                                    aria-expanded="false"
+                                    aria-label="Main menu">
+                                    <a href="#main-menu-toggle"
+                                       class="menu-close"
+                                       role="button"
+                                       id="main-menu-close"
+                                       aria-expanded="false"
+                                       aria-controls="main-menu"
+                                       aria-label="Close main menu">
+                                      <span class="sr-only">Close main menu</span>
+                                      <span class="fa fa-close" aria-hidden="true"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="#story">Our story</a></li>
+                                        <li><a href="#journal">Journal</a></li>
+                                        <li><a href="#offer">Offer</a></li>
+                                        <li><a href="#work">Work</a></li>
+                                        <li><a href="#gallery">Gallery</a></li>
+                                        <li><a href="#reviews">Reviews</a></li>
+                                        <li><a href="#contacts">Contacts</a></li>
+                                    </ul>
+                                </nav>
+                                <a href="#main-menu-toggle"
+                                    class="backdrop"
+                                    tabindex="-1"
+                                    hidden>
+                                </a>
+                            </div>
+<!--END Mobile menu-->
+                            
+                            
                             <nav class="menu header__menu">
                                 <ul class="menu__list">
                                     <li class="menu__item">
@@ -83,13 +111,13 @@
 
                     <div class="about__limiter grid-box">
                        
-                        <div class="about__content-wrapper cell-sm-4 cell-md-4 cell-xsm-12">
+                        <div class="about__content-wrapper cell-sm-10 cell-offset-sm-1 cell-md-4 cell-xsm-12">
                             <h2 class="about__heading">About us</h2>
                             <p class="about__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum iure soluta, corporis explicabo, autem porro amet aliquid in quas at.</p>
                             <button type="button" class="about__btn">Read more</button>
                         </div>
                         
-                        <div class="about__img-wrapper">
+                        <div class="about__img-wrapper cell-xsm-12 cell-sm-10 cell-offset-sm-1">
                             <img class="about__img" src="img/about/feet.jpg" width="350" height="350" alt="Landscape"> 
                             <img class="about__img" src="img/about/friends.jpg" width="806" height="570" alt="Friends">
                         </div> 
@@ -100,7 +128,7 @@
                              
 <!--JOURNAL SECTION-->
                                            
-                <section class="journal">
+                <section class="journal" id="journal">
                    <h2 class="journal__heading">Our journal</h2>
                    <div class="journal__post-container">
                        <div class="journal__post-wrapper-2">
@@ -151,11 +179,11 @@
                 <section class="offer" id="offer">
                     <div class="offer__content-limiter grid-box">
                        
-                        <div class="offer__content-wrapper cell-md-9 cell-sm-12 cell-xsm-12">
+                        <div class="offer__content-wrapper cell-md-12 cell-sm-12 cell-xsm-12">
                             <h2 class="offer__heading">Do you wanna go?</h2>
                             <p class="offer__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vitae saepe libero modi laboriosam explicabo, velit quas nobis perferendis totam</p>
                             
-                            <form class="order-form offer__form" action="" method="post">
+                            <form class="order-form offer__form" method="post">
                                 
                                 <div class="order-form__input-wrapper">
                                     <label for="name">Your name:</label>
@@ -178,12 +206,11 @@
                             
                         
 <!--WORK SECTION-->
-                <section class="work">
+                <section class="work" id="work">
                     <h2 class="work__heading">How we work</h2>
                     <ul class="work__stage-list grid-box">
 <!--Stage item 1-->
                         <li class="work__stage-item cell-md-3 cell-sm-6 cell-xsm-12">
-<!--for work__stage-num class delete numbers and use CSS-counters-->
                             <div class="work__stage-num">1</div>
                             <div class="work__stage-icon"><img src="img/work/file_x4.png" alt="file icon" width="32" height="40"></div>
                             <h3 class="work__stage-title">Lorem ipsum dolor sit.</h3>
@@ -216,22 +243,38 @@
                                            
 <!--GALLERY SECTION-->
                
-                <section class="gallery">
+                <section class="gallery" id="gallery">
                     <h2 class="gallery__heading">Gallery</h2>
-                    <div class="gallery__content-wrapper grid-box">
-                        <div class="gallery__col-1 cell-md-3 cell-sm-12">
-                            <img src="img/gallery/img_1.jpg" width="263" height="343" alt="Image 1">
-                            <img src="img/gallery/img_2.jpg" width="263" height="281" alt="Image 2">
-                        </div>
-                        <div class="gallery__col-2 cell-md-4 cell-sm-12">
-                            <img src="img/gallery/img_3.jpg" width="361" height="381" alt="Image 3">
-                            <img src="img/gallery/img_4.jpg" width="361" height="243" alt="Image 4">
-                        </div>
-                        <div class="gallery__col-3 cell-md-5 cell-sm-12">
-                            <img src="img/gallery/img_5.jpg" width="455" height="343" alt="Image 5">
-                            <img src="img/gallery/img_6.jpg" width="455" height="281" alt="Image 6">
+                    
+                    <div class="gallery__content-limiter">
+                        <div class="gallery__content-wrapper grid-box">
+                            <div class="gallery__col-1 cell-md-3 cell-sm-5 cell-xsm-12">
+                                <div class="gallery__img-wrapper">
+                                    <img class="gallery__img1" src="img/gallery/img_1.jpg" width="263" height="343" alt="Image 1">
+                                </div>
+                                <div class="gallery__img-wrapper">
+                                    <img class="gallery__img2" src="img/gallery/img_2.jpg" width="263" height="281" alt="Image 2">
+                                </div>
+                            </div>
+                            <div class="gallery__col-2 cell-md-4 cell-sm-6 cell-xsm-12">
+                                <div class="gallery__img-wrapper">
+                                    <img class="gallery__img3" src="img/gallery/img_3.jpg" width="361" height="381" alt="Image 3">
+                                </div>
+                                <div class="gallery__img-wrapper">
+                                    <img class="gallery__img4" src="img/gallery/img_4.jpg" width="361" height="243" alt="Image 4">
+                                </div>
+                            </div>
+                            <div class="gallery__col-3 cell-md-5 cell-sm-11 cell-xsm-12">
+                                <div class="gallery__img-wrapper">
+                                    <img class="gallery__img5" src="img/gallery/img_5.jpg" width="455" height="343" alt="Image 5">
+                                </div>
+                                <div class="gallery__img-wrapper">
+                                    <img class="gallery__img6" src="img/gallery/img_6.jpg" width="455" height="281" alt="Image 6">
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
                 </section>
                             
 
@@ -260,7 +303,7 @@
 
 <!--CLIENTS SECTION-->
                
-                <section class="clients">
+                <section class="clients" id="reviews">
                     <h2 class="clients__heading">Our clients say</h2>
 
                     <div class="clients__content-wrapper grid-box">
@@ -289,7 +332,7 @@
                     <div class="contacts__content-wrapper">
                             <h2 class="contacts__heading">Contacts</h2>
                             <p class="contacts__descr">Sign up for our newsletter to recieve updates</p>
-                            <form class="contact-form contacts__form" action="" method="post">
+                            <form class="contact-form contacts__form" method="post">
                                 <input class="contact-form__input-name" type="text" name="name" placeholder="Name" required>
                                 <input class="contact-form__input-phone" type="tel" name="phone" placeholder="Phone" required>
                                 <input class="contact-form__input-email" type="email" name="email" placeholder="E-mail" required>
@@ -300,7 +343,7 @@
             </main>
 
 <!--FOOTER-->
-            <footer class="footer">
+            <footer class="footer" id="contacts">
                 <div class="footer__content-wrapper grid-box">   
                     <p class="footer__phone cell-sm-4 cell-xsm-12">1 234 234 123</p>
                     <ul class="footer__social-list cell-sm-4 cell-xsm-12">

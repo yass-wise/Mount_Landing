@@ -74,6 +74,11 @@
 html {
     font-size: 62.5%;
 }
+h2 {
+    @include breakpoint(tablet) {
+        font-size: 2.2rem !important;
+    }
+}
 
 
 

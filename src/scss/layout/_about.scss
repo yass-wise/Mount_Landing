@@ -21,7 +21,12 @@
         background-position: 115px 20px;
 
         @include breakpoint(tablet) {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            height: auto;
             background-size: contain;
+            background-position: center 20px;
         }
         
         @include breakpoint(mobile) {
@@ -31,8 +36,10 @@
     
     &__content-wrapper {
 
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             text-align: center;
+//            height: auto;
+            flex: 1;
         }
     }
     
@@ -47,10 +54,12 @@
         
         @include breakpoint(tablet) {
             margin-top: 50px;
-        }
-        @include breakpoint(mobile) {
+            letter-spacing: 1px;
             background-position: center top;
+            
         }
+//        @include breakpoint(mobile) {
+//        }
     }
     
     &__descr {
@@ -79,26 +88,24 @@
     }
     &__img-wrapper {
         @include breakpoint(tablet) {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: center;
+            width: 100%;
+            height: 70.72%;
         }
-        @include breakpoint(mobile) {
-            display: none;
-        }
+//        @include breakpoint(mobile) {
+//            display: none;
+//        }
         
     }
     
     &__img {
         display: block;
         position: absolute;
-        overflow: hidden;
         
         &:nth-of-type(1) {
             left: 44.271%;
             top: 270px;
             z-index: 1;
-            @include breakpoint(laptop) {
+            @include breakpoint(tablet) {
                 display: none;
             }
         }
@@ -109,11 +116,9 @@
             top: -40px;
             
             @include breakpoint(tablet) {
-                width: calc(806px * 0.6);
-                height: calc(570px * 0.6);
-                margin-top: 50px;
+                width: 100%;
+                height: 70.72%;
                 position: static;
-                transform: translate(0, -70px);
             }
         }
         

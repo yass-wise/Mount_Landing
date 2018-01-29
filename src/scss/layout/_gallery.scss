@@ -1,7 +1,6 @@
 .gallery {
     width: 100%;
-    height: 900px;
-    display: none;
+    height: auto;
     
     &__heading {
         margin: auto;
@@ -14,16 +13,48 @@
         background-size: 80px 7px;
     }
     
-    &__content-wrapper {
+    &__content-limiter {
         max-width: 1170px;
         margin: auto;
         margin-top: 70px;
+        margin-bottom: 75px;
     }
     
-    @for $i from 1 through 3 {
-        &__col-#{$i} img:nth-child(n+1){
+    &__content-wrapper {
+        
+        @include breakpoint(tablet) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @include breakpoint(mobile) {
+            flex-wrap: nowrap;
+        }
+        
+    }
+    
+    &__col-3 {
+        @include breakpoint(tablet) {
             margin-top: 30px;
         }
     }
+    
+    &__col-2 {
+        @include breakpoint(mobile) {
+            margin-top: 30px;
+        }  
+    }
+    
+    &__img-wrapper:nth-of-type(2n) {
+        margin-top: 30px;
+    }
+    
+    & img {width: 100%;}
+    
+    &__img1 {height: 76.68%;}
+    &__img2 {height: 106.84%;}
+    &__img3 {height: 105.54%;}
+    &__img4 {height: 67.31%;}
+    &__img5 {height: 75.38%;}
+    &__img6 {height: 61.76%;}
 
 }

@@ -36,7 +36,7 @@
 
 .feedback-post {
     @include breakpoint(tablet) {
-        background-color: rgba(0, 186, 255, 0.2);
+        background-color: rgba(227, 227, 227, 0.13);
         box-shadow: 0 0 20px 0 rgba(grey, .45);
         padding: 20px;
         &:last-child {
